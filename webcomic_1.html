@@ -3,58 +3,23 @@
 <head>
 	<title>At Rainbow Hotel</title>
 	<link rel="stylesheet" type="text/css" href="webcomic_1.css">
-	<style>
-		/* Style the webcomic container */
-		#webcomic {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		/* Style the control buttons */
-		.control-button {
-			display: inline-block;
-			padding: 10px 20px;
-			border: none;
-			background-color: #ffffff;
-			color: #000000;
-			cursor: pointer;
-		}
-		.control-button:hover {
-			opacity: 0.7;
-		}
-	</style>
 </head>
 <body>
 
-<!-- Display the webcomic and control buttons -->
-<div id="webcomic">
-	<button class="control-button" onclick="loadPrevPage()">Previous</button>
-	<img id="webcomic_page">
-	<button class="control-button" onclick="loadNextPage()">Next</button>
+<!-- Display the banner image -->
+<div id="banner">
+	<img src="webcomics/webcomic_1/banner.png" alt="Webcomic 1 banner">
 </div>
 
-<script>
-// Load the selected page
-function loadPage(pageNumber) {
-	const webcomicPage = document.getElementById('webcomic_page');
-	webcomicPage.src = `webcomics/webcomic_1/page_${pageNumber.toString().padStart(3, '0')}.png`;
-}
-	// Load the previous page
-	function loadPrevPage() {
-		const page = document.getElementById('webcomic_page').src.match(/webcomics\/webcomic_1\/(.*).png/)[1];
-		const prevPage = parseInt(page.replace('page_', '')) - 1;
-		if (prevPage > 0) {
-			loadPage(`page_${prevPage}`);
-		}
-	}
-
-	// Load the next page
-	function loadNextPage() {
-		const page = document.getElementById('webcomic_page').src.match(/webcomics\/webcomic_1\/(.*).png/)[1];
-		const nextPage = parseInt(page.replace('page_', '')) + 1;
-		loadPage(`page_${nextPage}`);
-	}
-</script>
+<!-- Display the webcomic and control buttons -->
+<div id="webcomic">
+	<img id="webcomic_page" src="webcomics/webcomic_1/page_001.png">
+	<!-- Include the webcomic_1.js file -->
+	<script src="webcomic_1.js"></script>
+	<div id="controls">
+		<button class="control-button" onclick="loadPrevPage()">Previous</button>
+		<button class="control-button" onclick="loadNextPage()">Next</button>
+	</div>
+</div>
 </body>
 </html>
