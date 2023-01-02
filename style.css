@@ -1,0 +1,31 @@
+/* Set page BG color */
+body {
+	background-color: #2a2c2a; /* Set the background color to white */
+}
+
+/* Style the banner image */
+#banner {
+	width: 1200;
+	height: 450-px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+}
+
+/* Style the webcomic container */
+#webcomic {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Style the control buttons */
+.control-button {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+}
