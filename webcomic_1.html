@@ -19,6 +19,13 @@
 	<div id="controls">
 		<button class="control-button" onclick="loadPrevPage()">Previous</button>
 		<button class="control-button" onclick="loadNextPage()">Next</button>
+		<button class="control-button" onclick="window.location.href='index.html'">Back to Main Page</button>
+		<br>
+		<label for="page_input">Go to page:</label>
+		<input type="number" id="page_input" min="1">
+		<button id="go_to_page_button" onclick="goToPage()">Go</button>
+		<!-- Display the current page number -->
+		<div id="current_page">1</div>
 	</div>
 </div>
 </body>

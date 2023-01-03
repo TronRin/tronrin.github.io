@@ -1,9 +1,72 @@
+/* Center the banner image */
+#banner {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Center the webcomic image */
+#webcomic {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#webcomic_page {
+display: block;
+margin: 0 auto;
+}
+
 /* Set the default background color and text color */
+#controls {
+  display: flex; /* Display the buttons as a flex container */
+  justify-content: space-between; /* Distribute the buttons evenly across the width of the container */
+}
+
 body {
 	background-color: #3C3C3C;
 	color: #ffffff;
 }
+#back_button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: #f44336;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
 
+#controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.control-button {
+	background-color: #f44336;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+</style>
+<script>
+function backToMainPage() {
+	window.location.href = "index.html";
+}
 /* Style the control buttons */
 .control-button {
 	display: inline-block;
@@ -16,6 +79,14 @@ body {
 .control-button:hover {
 	opacity: 0.7;
 }
+.control-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
 /* Style the button for the comic page selection page */
 #page_list_button {
@@ -31,3 +102,8 @@ body {
 #page_list_button:hover {
 	opacity: 0.7;
 }
+#back-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
