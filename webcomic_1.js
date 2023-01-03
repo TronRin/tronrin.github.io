@@ -31,7 +31,7 @@ function loadPage(page) {
   const webcomicPage = document.getElementById('webcomic_page');
   webcomicPage.src = `./webcomics/webcomic_1/page_${String(page).padStart(3, '0')}.png`;
 
-  
+
 function addWebcomicPageEventListener() {
   // Add an event listener to open the image in full size when clicked
   webcomicPage.addEventListener('click', () => {
