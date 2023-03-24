@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Nightmare of O</title>
+  </head>
+      <style>
+      @font-face {
+        font-family: 'CustomFont';
+        src: url('Gold Plated.ttf') format('truetype');
+      }
+      body {
+        background-color: black;
+      }
+      h1, p {
+        color: white;
+        text-align: center;
+        font-family: 'CustomFont', sans-serif;
+      }
+	  </style>
+  </head>
+  <body style="background-color: black;">
+<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
+
+    <audio>
+        <source src="Tick Tock.mp3" type="audio/mp3">
+    </audio>
+    <h1 style="color: white; text-align: center;">Through the darkest of dreams...</h1>
+    <p style="color: white; text-align: center;">
+      Coming Soon...
+    </p>
+    <p style="text-align: center;">
+      <img src="canyouhearthetimetickaway.png" alt="The Will of O" />
+    </p>
+	</div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The curious boy inherited His father's thirst for knowledge. Be it because of the father's neglect, or something much more sinister, He succeeded where the old alchemist failed and summoned 'It' forth from beyond. But instead of praise He received only venomous envy and a harsh punishment. -->
